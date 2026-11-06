@@ -1,0 +1,11 @@
+data/urgences_history.jsonl
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+scala/target/
+scala/project/
+.idea/
+.vscode/
+*.log
+spark-warehouse/
+*.pyc

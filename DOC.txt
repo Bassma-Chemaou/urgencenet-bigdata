@@ -1,0 +1,3 @@
+docker compose exec jupyter python3 /workspace/data/producer.py --mode kafka --rate 20
+docker compose logs -f --tail 100 jupyter
+http://localhost:9001/browser/lake

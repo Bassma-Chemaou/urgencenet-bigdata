@@ -1,0 +1,99 @@
+x-spark-common: &spark-common
+  build: .
+  image: urgencenet-spark:3.5.3
+  user: root
+  networks: [urgencenet]
+
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    hostname: kafka
+    ports:
+      - "9094:9094"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_NUM_PARTITIONS: 3
+    networks: [urgencenet]
+
+  minio:
+    image: quay.io/minio/minio:latest
+    hostname: minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin123
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    networks: [urgencenet]
+
+  minio-init:
+    <<: *spark-common
+    hostname: minio-init
+    depends_on: [minio]
+    restart: "no"
+    volumes:
+      - ./init_bucket.py:/init_bucket.py
+    command: ["python3", "/init_bucket.py"]
+
+  spark-master:
+    <<: *spark-common
+    hostname: spark-master
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.master.Master", "--host", "spark-master"]
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+
+  spark-worker-1:
+    <<: *spark-common
+    hostname: spark-worker-1
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077"]
+    environment:
+      SPARK_WORKER_CORES: 2
+      SPARK_WORKER_MEMORY: 2g
+    ports:
+      - "8081:8081"
+    depends_on: [spark-master]
+
+  spark-worker-2:
+    <<: *spark-common
+    hostname: spark-worker-2
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077"]
+    environment:
+      SPARK_WORKER_CORES: 2
+      SPARK_WORKER_MEMORY: 2g
+    ports:
+      - "8082:8081"
+    depends_on: [spark-master]
+
+  jupyter:
+    <<: *spark-common
+    hostname: jupyter
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root",
+              "--ServerApp.token=", "--ServerApp.password="]
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./notebooks:/workspace/notebooks
+      - ./data:/workspace/data
+      - ./scala:/workspace/scala
+    depends_on: [spark-master, minio, kafka]
+
+networks:
+  urgencenet:
+
+volumes:
+  minio_data:

@@ -1,0 +1,40 @@
+{"facility_id": "F-001", "name": "CHU Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CHU", "beds": 931, "latitude": 33.61789, "longitude": -7.60032}
+{"facility_id": "F-002", "name": "Hôpital Régional Nord Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "HOPITAL_REGIONAL", "beds": 262, "latitude": 33.53034, "longitude": -7.58621}
+{"facility_id": "F-003", "name": "Hôpital Régional Sud Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "HOPITAL_REGIONAL", "beds": 343, "latitude": 33.58138, "longitude": -7.54883}
+{"facility_id": "F-004", "name": "Clinique Al Amal Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 67, "latitude": 33.52685, "longitude": -7.59644}
+{"facility_id": "F-005", "name": "Clinique Ennour Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 48, "latitude": 33.54717, "longitude": -7.5847}
+{"facility_id": "F-006", "name": "Clinique Atlas Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 47, "latitude": 33.60579, "longitude": -7.62742}
+{"facility_id": "F-007", "name": "Clinique Al Madina Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 68, "latitude": 33.58616, "longitude": -7.5815}
+{"facility_id": "F-008", "name": "Centre de Santé Hay 1 Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CENTRE_SANTE", "beds": 11, "latitude": 33.58081, "longitude": -7.60013}
+{"facility_id": "F-009", "name": "Centre de Santé Hay 2 Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CENTRE_SANTE", "beds": 17, "latitude": 33.52776, "longitude": -7.55395}
+{"facility_id": "F-010", "name": "Centre de Santé Hay 3 Casablanca", "city": "Casablanca", "hospital_group": "GHT-Atlantique", "type": "CENTRE_SANTE", "beds": 19, "latitude": 33.56501, "longitude": -7.58573}
+{"facility_id": "F-011", "name": "CHU Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CHU", "beds": 1184, "latitude": 34.00175, "longitude": -6.80999}
+{"facility_id": "F-012", "name": "Hôpital Régional Nord Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "HOPITAL_REGIONAL", "beds": 296, "latitude": 33.98121, "longitude": -6.83448}
+{"facility_id": "F-013", "name": "Hôpital Régional Sud Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "HOPITAL_REGIONAL", "beds": 298, "latitude": 34.00814, "longitude": -6.83683}
+{"facility_id": "F-014", "name": "Clinique Al Amal Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 48, "latitude": 34.02734, "longitude": -6.8297}
+{"facility_id": "F-015", "name": "Clinique Ennour Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 103, "latitude": 34.03894, "longitude": -6.84884}
+{"facility_id": "F-016", "name": "Clinique Atlas Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 80, "latitude": 34.01746, "longitude": -6.79926}
+{"facility_id": "F-017", "name": "Clinique Al Madina Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CLINIQUE", "beds": 86, "latitude": 34.00088, "longitude": -6.81216}
+{"facility_id": "F-018", "name": "Centre de Santé Hay 1 Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CENTRE_SANTE", "beds": 17, "latitude": 33.97909, "longitude": -6.86158}
+{"facility_id": "F-019", "name": "Centre de Santé Hay 2 Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CENTRE_SANTE", "beds": 25, "latitude": 34.05841, "longitude": -6.81866}
+{"facility_id": "F-020", "name": "Centre de Santé Hay 3 Rabat", "city": "Rabat", "hospital_group": "GHT-Atlantique", "type": "CENTRE_SANTE", "beds": 19, "latitude": 34.0318, "longitude": -6.88428}
+{"facility_id": "F-021", "name": "CHU Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CHU", "beds": 1124, "latitude": 31.62131, "longitude": -7.95539}
+{"facility_id": "F-022", "name": "Hôpital Régional Nord Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "HOPITAL_REGIONAL", "beds": 288, "latitude": 31.67283, "longitude": -7.98893}
+{"facility_id": "F-023", "name": "Hôpital Régional Sud Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "HOPITAL_REGIONAL", "beds": 496, "latitude": 31.64632, "longitude": -7.95464}
+{"facility_id": "F-024", "name": "Clinique Al Amal Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CLINIQUE", "beds": 113, "latitude": 31.65841, "longitude": -7.94926}
+{"facility_id": "F-025", "name": "Clinique Ennour Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CLINIQUE", "beds": 83, "latitude": 31.64903, "longitude": -7.97166}
+{"facility_id": "F-026", "name": "Clinique Atlas Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CLINIQUE", "beds": 114, "latitude": 31.65919, "longitude": -8.02422}
+{"facility_id": "F-027", "name": "Clinique Al Madina Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CLINIQUE", "beds": 51, "latitude": 31.67397, "longitude": -7.98369}
+{"facility_id": "F-028", "name": "Centre de Santé Hay 1 Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CENTRE_SANTE", "beds": 12, "latitude": 31.58557, "longitude": -7.96095}
+{"facility_id": "F-029", "name": "Centre de Santé Hay 2 Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CENTRE_SANTE", "beds": 30, "latitude": 31.63729, "longitude": -7.96298}
+{"facility_id": "F-030", "name": "Centre de Santé Hay 3 Marrakech", "city": "Marrakech", "hospital_group": "GHT-Sud", "type": "CENTRE_SANTE", "beds": 24, "latitude": 31.60796, "longitude": -7.99252}
+{"facility_id": "F-031", "name": "CHU Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CHU", "beds": 955, "latitude": 35.71176, "longitude": -5.83783}
+{"facility_id": "F-032", "name": "Hôpital Régional Nord Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "HOPITAL_REGIONAL", "beds": 293, "latitude": 35.77059, "longitude": -5.83463}
+{"facility_id": "F-033", "name": "Hôpital Régional Sud Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "HOPITAL_REGIONAL", "beds": 305, "latitude": 35.78632, "longitude": -5.87107}
+{"facility_id": "F-034", "name": "Clinique Al Amal Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CLINIQUE", "beds": 71, "latitude": 35.74929, "longitude": -5.79232}
+{"facility_id": "F-035", "name": "Clinique Ennour Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CLINIQUE", "beds": 103, "latitude": 35.71756, "longitude": -5.83908}
+{"facility_id": "F-036", "name": "Clinique Atlas Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CLINIQUE", "beds": 110, "latitude": 35.73728, "longitude": -5.87031}
+{"facility_id": "F-037", "name": "Clinique Al Madina Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CLINIQUE", "beds": 95, "latitude": 35.7959, "longitude": -5.85616}
+{"facility_id": "F-038", "name": "Centre de Santé Hay 1 Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CENTRE_SANTE", "beds": 23, "latitude": 35.80815, "longitude": -5.81573}
+{"facility_id": "F-039", "name": "Centre de Santé Hay 2 Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CENTRE_SANTE", "beds": 22, "latitude": 35.80527, "longitude": -5.86891}
+{"facility_id": "F-040", "name": "Centre de Santé Hay 3 Tanger", "city": "Tanger", "hospital_group": "GHT-Nord", "type": "CENTRE_SANTE", "beds": 15, "latitude": 35.72463, "longitude": -5.81815}
